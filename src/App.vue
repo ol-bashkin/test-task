@@ -1,31 +1,27 @@
 <template>
     <div id="app">
-        <div id="nav">
-            <router-link to="/">Home</router-link> |
-            <router-link to="/about">About</router-link>
-        </div>
         <router-view />
     </div>
 </template>
-
+<script>
+import { heightMixin } from "@/mixins/heightMixin.js";
+export default {
+    mixins: {
+        heightMixin
+    }
+};
+</script>
 <style lang="scss">
+@import "@/assets/scss/vars";
 #app {
     font-family: Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
+    height: 100vh;
+    min-height: 600px;
 }
-
-#nav {
-    padding: 30px;
-
-    a {
-        font-weight: bold;
-        color: #2c3e50;
-
-        &.router-link-exact-active {
-        }
-    }
+body {
+    background-color: $gray-1;
+    margin: 0;
 }
 </style>
