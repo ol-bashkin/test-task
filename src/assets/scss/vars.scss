@@ -1,0 +1,36 @@
+// Colors
+$violet: #6d6dff;
+$violetdark: #5e5efb;
+$error: #ff7979;
+
+$gray-0: #1f2123;
+$gray-1: #25262A;
+$gray-2: #545453;
+$gray-3: #6f6f6f;
+$gray-4: #a9a9a9;
+$gray-5: #ffffff;
+
+// Misc
+
+$timing: 0.3s;
+$cubic: cubic-bezier(0.39, 0.575, 0.565, 1);
+$transition: $cubic $timing;
+$selection: rgba($violet, 0.24);
+
+// Widths
+$desktop-cols: 18;
+$sm-desktop-cols: 12;
+$tablet-cols: 8;
+$col: 60px;
+$gap: 30px;
+$vertical-gap: 150px;
+$vertical-gap-mobile: 100px;
+$radius-small: 2px;
+
+$desktop-width: getwidth($desktop-cols);
+$sm-desktop-width: getwidth($sm-desktop-cols);
+$tablet-width: getwidth($tablet-cols);
+
+$desktop-break: getbreak($desktop-width, getshift(1));
+$sm-desktop-break: getbreak($sm-desktop-width, getshift(1));
+$tablet-break: getbreak($tablet-width, $gap);

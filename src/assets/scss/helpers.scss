@@ -1,0 +1,20 @@
+@function getwidth($number) {
+    @return $number * $col + ($number - 1) * $gap;
+}
+
+@function getbreak($width, $pad) {
+    @return $width + $pad * 2;
+}
+
+@function getshift($number) {
+    @return $number * $col + $number * $gap;
+}
+
+@mixin noscroll {
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+        width: 0px;
+    }
+}
