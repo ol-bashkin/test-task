@@ -1,3 +1,25 @@
+# test-task
+
+## Project setup
+```
+yarn install
+```
+
+### Compiles and hot-reloads for development
+```
+yarn serve
+```
+
+### Compiles and minifies for production
+```
+yarn build
+```
+
+### Lints and fixes files
+```
+yarn lint
+```
+
 # Тестовое задание
 Необходимо развернуть простое vue приложение со страницами:
 1. Авторизация
