@@ -6,9 +6,7 @@
 <script>
 import { heightMixin } from "@/mixins/heightMixin.js";
 export default {
-    mixins: {
-        heightMixin
-    }
+    mixins: [heightMixin]
 };
 </script>
 <style lang="scss">
